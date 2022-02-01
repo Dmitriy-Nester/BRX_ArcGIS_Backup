@@ -1,0 +1,6 @@
+# ignored files
+
+*.dll
+*.pdb
+*.tx
+*.cache
