@@ -5,6 +5,9 @@ namespace BRX_ArcGis
         public AddByUrlButton() 
         {
             this.Text = "Add Data by URL";
+            AddDataCommandHandlers handler = new AddDataCommandHandlers();
+            handler.mode = AddDataCommandHandlers.Mode.ByURL;
+            this.CommandHandler = handler;
         }
     }
 }

@@ -5,6 +5,9 @@ namespace BRX_ArcGis
         public AddDataButton() 
         {
             this.Text = "Add Data";
+            AddDataCommandHandlers handler = new AddDataCommandHandlers();
+            handler.mode = AddDataCommandHandlers.Mode.PortalWindow;
+            this.CommandHandler = handler;
         }
     }
-}
+} 
